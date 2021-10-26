@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MathWar</title>
+    <link rel="stylesheet" href="jogo.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a class="logo" href="jogo.html">MathWar</a>
+        <ul class="nav-list">
+            <li><a href="main.html">Início</a></li>
+            <li><a href="desenvolvedores.html">Desenvolvedor</a></li>
+            <li><a href="jogo.html">Jogo</a></li>
+        </ul>
+    </nav>
+</header>
+
+<canvas id="mycanvas" height="800" width="800"></canvas>
+<video id="background-video" autoplay loop muted >
+    <source src="videos/fundo.mp4" type="video/mp4">
+</video>
+
+<button id="botaoiniciar" onclick="main();"> Iniciar </button>
+
+<div id="caixa_tentativa">
+
+<p> <input type="text" id="tentativa">  </p>
+<input type="button" value = "Clique aqui para checar a resposta!" onclick = "checar()" id="botaotentativa">
+</div>
+<div id="modoDeJogo">
+    <p>Modo de jogo:</p>
+
+    <div>
+        <input type="radio" id="endless" name="modo" value="endless" onclick="selecionaModo(endless)">
+        <label for="endless">Endless Mode</label>
+    </div>
+    <div>
+        <input type="radio" id="normal" name="modo" value="normal" checked onclick="selecionaModo(normal)">
+        <label for="normal">Modo Normal</label>
+    </div>
+
+</div>
+<div id="dificuldadediv">
+    <p> Dificuldade:</p>
+    <p id="dificuldade"> </p>
+    <div id="inputDificuldade">
+    <input type="button" value = "Fácil!" onclick = "dificuldade(1)" id="botaofacil">
+    <input type="button" value = "Médio!" onclick = "dificuldade(2)" id="botaomedio">
+    <input type="button" value = "Dificil!" onclick = "dificuldade(3)" id="botaodificil">
+    </div>
+</div>
+
+<div id="pontuacaodiv">
+    <p >Pontuação:</p>
+    <p id="pontuacao"></p>
+</div>
+
+<div>
+    <label id="labelvol" for="vol">Volume (entre 0 e 100):</label>
+    <input type="range" id="vol" name="vol" min="0" max="1000" onchange="atualizaVolume()">
+    <br>
+    <input type="button" id="volumeBotao" value="Clique aqui para testar o volume!" onclick="testaVolume()">
+</div>
+
+<div>
+    <input type="button" value = "Pausa!" onclick = "pausa()" id="botaopausa">
+    <input type="button" value = "Parar!" onclick = "parar()" id="botaoparar">
+</div>
+<div id="tutorial">
+    <p>O objetivo do jogo é realizar as operações matemáticas de cabeça, colocar o resultado no campo de tentativa e apertar o botão para verificar a resposta. Os inimigos de subtração são verdes, os de soma são pretos e os de multiplicação são vermelhos.</p>
+    <br>
+    <p>No modo normal o jogo acaba quando o jogador atingir a pontuação alvo do jogo ou quando o jogador perder todas as vidas. Já no modo endless, o objetivo é o jogador fazer o maior número de pontos antes que perca as 3 vidas.</p>
+    <p>A pontuação alvo é diferente para cada dificuldade, na dificuldade fácil o jogador precisa atingir 10 pontos, para a dificuldade média são necessários fazer 20 pontos, já na dificuldade dificil são necessários 30 pontos.
+    <br>
+        <br>A dificuldade também interfere no tamanho dos números que aparecem nos inimigos.
+        <br>O jogador também tem a sua disposição o botão de pausar, que funciona como uma espécie de habilidade especial que congela o tempo e permite o jogador pensar nas respostas para então clicar no botão de pausar novamente e inserir a resposta. O botão de pausar tem um limite de 3 usos por jogo!
+    </p>
+</div>
+<img src="Imagens/vida.png" id="vida1" alt="vida" width=50px>
+<img src="Imagens/vida.png" id="vida2" alt="vida" width=50px>
+<img src="Imagens/vida.png" id="vida3" alt="vida" width=50px>
+<img src="Imagens/pause.png" id="pause1" alt="vida" width=50px>
+<img src="Imagens/pause.png" id="pause2" alt="vida" width=50px>
+<img src="Imagens/pause.png" id="pause3" alt="vida" width=50px>
+<script src="jogo.js"></script>
+<p id="assinatura">Alisson Alexandre Botelho Barros R.A. 22221009-8</p>
+</body>
+</html>

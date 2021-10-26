@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    border: 3px solid #000000;"
+    background-repeat: no-repeat;
+    background-size: 800px 800px;
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#background-video {
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#botaoiniciar{
+    margin: auto;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    top: 5px;
+}
+
+
+body{
+    background: linear-gradient(-45deg, #BA5370, #F4E2D8) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#volumeBotao{
+    position: absolute;
+    right: 50px;
+    top: 135px;
+}
+
+#vol{
+    position: absolute;
+    right: 90px;
+    top: 110px;
+}
+
+#labelvol{
+    position: absolute;
+    right: 90px;
+    top: 90px;
+}
+
+#modoDeJogo{
+    position: absolute;
+    left: 90px;
+    top: 90px;
+}
+
+#dificuldadediv{
+    position: absolute;
+    left: 90px;
+    top: 160px;
+}
+#botaotentativa{
+    position: absolute;
+    left: 20px;
+    top: 110px;
+}
+#tentativa{
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    font-size: 18pt;
+    left: 60px;
+    top: 80px;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+#vida1{
+    position: absolute;
+    right: 200px;
+    top: 190px;
+}
+#vida3{
+    position: absolute;
+    right: 80px;
+    top: 190px;
+}
+#vida2{
+    position: absolute;
+    right: 140px;
+    top: 190px;
+}
+#pause1{
+    position: absolute;
+    right: 200px;
+    top: 250px;
+}
+#pause2{
+    position: absolute;
+    right: 140px;
+    top: 250px;
+}
+#pause3{
+    position: absolute;
+    right: 80px;
+    top: 250px;
+}
+
+#pontuacaodiv{
+    position: absolute;
+    left: 90px;
+    top: 205px;
+}
+#botaoparar{
+    position: absolute;
+    left: 150px;
+    width: 125px;
+    top: 250px;
+}
+#botaopausa{
+    position: absolute;
+    left: 20px;
+    width: 125px;
+    top: 250px;
+}
+button, input[type=button]{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    color:#FFFFFF;
+    background-color: #0A55F7;
+    text-align: center;
+    transition: all 0.2s;
+}
+button:hover, input[type=button]:hover{
+    background-color: #5588F9;
+    cursor: pointer;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Besley', serif;
+    background: #23232e;
+    height: 8vh;
+}
+
+
+.nav-list{
+    list-style: none;
+    display:flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+#tutorial{
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+    font-size: 16pt;
+    width: 700px;
+}
+
+#assinatura{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 25pt;
+    font-family: 'Teko', sans-serif;
+}
