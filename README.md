@@ -13,4 +13,5 @@ A pontuação alvo é diferente para cada dificuldade, na dificuldade fácil o j
 
 A dificuldade também interfere no tamanho dos números que aparecem nos inimigos.
 O jogador também tem a sua disposição o botão de pausar, que funciona como uma espécie de habilidade especial que congela o tempo e permite o jogador pensar nas respostas para então clicar no botão de pausar novamente e inserir a resposta. O botão de pausar tem um limite de 3 usos por jogo!
+
 ![Animação Jogo](https://user-images.githubusercontent.com/93171892/194779136-766f43fb-6358-4cad-b930-00c37c95525b.gif)
